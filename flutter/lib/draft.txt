@@ -1,0 +1,78 @@
+Center(
+          child: Column(
+            children: [
+              Container(
+                margin: EdgeInsets.only(
+                  top: 5,
+                ),
+                child: Text(
+                  nama,
+                  style: TextStyle(
+                    color: Theme.of(context).primaryColor,
+                    fontSize: 36,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(
+                  left: 5,
+                  right: 5,
+                  top: 5,
+                ),
+                child: Text(
+                  alamat,
+                  style: TextStyle(
+                    fontSize: 15,
+                    fontWeight: FontWeight.w200,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+              Column(
+                children: [
+                  Container(
+                    margin: EdgeInsets.only(top: 15),
+                    child: Text(
+                      "Ketersediaan Kamar",
+                      style: TextStyle(
+                        color: Theme.of(context).primaryColor,
+                        fontSize: 20,
+                      ),
+                    ),
+                  ),
+                  Divider(
+                    height: 5,
+                    indent: 25,
+                    endIndent: 25,
+                    thickness: 1,
+                    color: Theme.of(context).primaryColor,
+                  ),
+                ],
+              ),
+              Container(
+                height: screenHeight * 0.675,
+                child: FutureBuilder(
+                  future: _futureData,
+                  builder: (context, snapshot) {
+                    if (snapshot.hasData) {
+                      for (var i = 0; i < snapshot.data.length; i++) {
+                        card.add(DetailCard(
+                          nama: snapshot.data[i].kelas,
+                          tersedia: snapshot.data[i].tersedia,
+                          kapasitas: snapshot.data[i].kapasitas,
+                          tipe: "kelas",
+                        ));
+                      }
+                      return ListView(
+                        children: card,
+                      );
+                    } else {
+                      return Center(child: CircularProgressIndicator());
+                    }
+                  },
+                ),
+              ),
+            ],
+          ),
+        )
