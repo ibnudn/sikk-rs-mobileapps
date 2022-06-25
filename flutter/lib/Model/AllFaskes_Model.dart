@@ -23,7 +23,7 @@ class Ketersediaan {
       String nama = null,
       // ignore: avoid_init_to_null
       String kelas = null}) async {
-    String baseURL = "http://m3118039.mhs.d3tiuns.com";
+    String baseURL = "m3118039.mhs.d3tiuns.com";
     String path = "v2/api/";
     String apiKey = "mainappkey";
     Map<String, String> params1 = <String, String>{

@@ -16,7 +16,7 @@ class Ketersediaan {
   }
 
   static Future<List<Ketersediaan>> getKetersediaan(String page) async {
-    String baseURL = "http://m3118039.mhs.d3tiuns.com";
+    String baseURL = "m3118039.mhs.d3tiuns.com";
     String path = "v2/api/";
     String apiKey = "mainappkey";
 
