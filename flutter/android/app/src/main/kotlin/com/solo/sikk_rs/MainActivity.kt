@@ -1,4 +1,4 @@
-package com.example.latihan
+package com.solo.sikk_rs
 
 import io.flutter.embedding.android.FlutterActivity
 

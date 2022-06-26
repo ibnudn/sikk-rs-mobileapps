@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "latihan",
+            "name": "sikk_rs",
             "request": "launch",
             "type": "dart"
         }

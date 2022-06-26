@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:percent_indicator/percent_indicator.dart';
-import 'package:latihan/View/FaskesPage.dart';
-import 'package:latihan/View/KelasPage.dart';
+import 'package:SIKK_RS/View/FaskesPage.dart';
+import 'package:SIKK_RS/View/KelasPage.dart';
 
 class MainCard extends StatelessWidget {
   final String tersedia, kapasitas, nama, alamat, koordinat, tipe;
