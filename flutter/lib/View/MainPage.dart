@@ -66,6 +66,7 @@ class _MainPageState extends State<MainPage> {
                                 nama: snapshot.data[i].nama,
                                 alamat: snapshot.data[i].alamat,
                                 koordinat: snapshot.data[i].koordinat,
+                                website: snapshot.data[i].website,
                                 tipe: "faskes",
                               ));
                             }

@@ -1,31 +1,46 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:latlong2/latlong.dart';
 // import 'dart:convert';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
 import 'package:sikk_rs/View/Templates/BaseAppBar.dart';
 import 'package:sikk_rs/View/Templates/DetailCard.dart';
 import 'package:sikk_rs/Model/AllFaskes_Model.dart' as Detail;
 import 'package:sikk_rs/Direction.dart' as Direction;
 import 'package:sikk_rs/_Dir.dart' as direction_;
+import 'package:url_launcher/url_launcher_string.dart';
 
 class FaskesPage extends StatefulWidget {
-  final String nama, alamat, koordinat;
-  FaskesPage({this.nama = "", this.alamat = "", this.koordinat = ""});
+  final String nama, alamat, koordinat, website;
+  FaskesPage(
+      {this.nama = "",
+      this.alamat = "",
+      this.koordinat = "",
+      this.website = ""});
 
   @override
-  _FaskesPageState createState() =>
-      _FaskesPageState(nama: nama, alamat: alamat, koordinat: koordinat);
+  _FaskesPageState createState() => _FaskesPageState(
+        nama: nama,
+        alamat: alamat,
+        koordinat: koordinat,
+        website: website,
+      );
 }
 
 class _FaskesPageState extends State<FaskesPage> {
-  final String nama, alamat, koordinat;
+  final String nama, alamat, koordinat, website;
   List<Widget> card = [];
   Future _futureData;
   Widget _distance;
   Widget _mapLayer;
 
-  _FaskesPageState({this.nama = "", this.alamat = "", this.koordinat = ""});
+  _FaskesPageState(
+      {this.nama = "",
+      this.alamat = "",
+      this.koordinat = "",
+      this.website = ""});
 
   @override
   void initState() {
@@ -131,6 +146,29 @@ class _FaskesPageState extends State<FaskesPage> {
                 fontSize: 15,
                 fontWeight: FontWeight.w200,
               ),
+              textAlign: TextAlign.center,
+            ),
+          ),
+          Container(
+            margin: EdgeInsets.only(
+              left: 5,
+              right: 5,
+              top: 5,
+            ),
+            child: RichText(
+              text: TextSpan(children: [
+                TextSpan(
+                    text: website,
+                    style: TextStyle(
+                      fontSize: 15,
+                      fontWeight: FontWeight.w200,
+                      color: Colors.blue,
+                    ),
+                    recognizer: TapGestureRecognizer()
+                      ..onTap = () {
+                        launchUrlString(website);
+                      }),
+              ]),
               textAlign: TextAlign.center,
             ),
           ),

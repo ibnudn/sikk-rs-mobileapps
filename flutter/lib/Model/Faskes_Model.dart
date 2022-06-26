@@ -2,13 +2,14 @@ import 'package:http/http.dart' as http;
 import 'dart:convert';
 
 class Ketersediaan {
-  String id, nama, alamat, koordinat, kapasitas, tersedia;
+  String id, nama, alamat, koordinat, website, kapasitas, tersedia;
 
   Ketersediaan(
       {this.id,
       this.nama,
       this.alamat,
       this.koordinat,
+      this.website,
       this.kapasitas,
       this.tersedia});
 
@@ -18,6 +19,7 @@ class Ketersediaan {
       nama: object['nama'],
       alamat: object['alamat'],
       koordinat: object['koordinat'],
+      website: object['website'],
       kapasitas: object['kapasitas'],
       tersedia: object['tersedia'],
     );
