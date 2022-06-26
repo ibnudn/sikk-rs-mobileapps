@@ -26,5 +26,5 @@ _This application is built using the [Flutter](https://flutter.dev/) framework._
 Saat ini aplikasi hanya tersedia di Android.
 _Currently the app is only available on Android._
 
-Unduh aplikasi [di sini]().
-Download the app [here]().
+Unduh aplikasi [di sini](https://gitd3ti.vokasi.uns.ac.id/ibnudn/m3118039-mobileapps/-/raw/main/SIKK-RS-SOLO_release_26-06-2022_v1.0.0.apk).
+_Download the app [here](https://gitd3ti.vokasi.uns.ac.id/ibnudn/m3118039-mobileapps/-/raw/main/SIKK-RS-SOLO_release_26-06-2022_v1.0.0.apk)._
