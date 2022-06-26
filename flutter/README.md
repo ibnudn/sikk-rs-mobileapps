@@ -1,4 +1,4 @@
-# SIKK_RS
+# sikk_rs
 
 A new Flutter project.
 

@@ -3,11 +3,11 @@ import 'package:flutter_map/flutter_map.dart';
 import 'package:latlong2/latlong.dart';
 // import 'dart:convert';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
-import 'package:SIKK_RS/View/Templates/BaseAppBar.dart';
-import 'package:SIKK_RS/View/Templates/DetailCard.dart';
-import 'package:SIKK_RS/Model/AllFaskes_Model.dart' as Detail;
-import 'package:SIKK_RS/Direction.dart' as Direction;
-import 'package:SIKK_RS/_Dir.dart' as direction_;
+import 'package:sikk_rs/View/Templates/BaseAppBar.dart';
+import 'package:sikk_rs/View/Templates/DetailCard.dart';
+import 'package:sikk_rs/Model/AllFaskes_Model.dart' as Detail;
+import 'package:sikk_rs/Direction.dart' as Direction;
+import 'package:sikk_rs/_Dir.dart' as direction_;
 
 class FaskesPage extends StatefulWidget {
   final String nama, alamat, koordinat;

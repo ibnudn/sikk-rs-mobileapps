@@ -4,8 +4,8 @@ import 'package:flutter_map_location_marker/flutter_map_location_marker.dart';
 import 'package:flutter_map/plugin_api.dart';
 import 'package:location/location.dart';
 import 'package:latlong2/latlong.dart';
-import 'package:SIKK_RS/Model/Direction_Helper.dart';
-import 'package:SIKK_RS/View/Templates/ZoomButtonsPluginOption.dart';
+import 'package:sikk_rs/Model/Direction_Helper.dart';
+import 'package:sikk_rs/View/Templates/ZoomButtonsPluginOption.dart';
 import 'dart:async';
 import 'dart:math' as Math;
 

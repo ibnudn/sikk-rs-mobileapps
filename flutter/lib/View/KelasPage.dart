@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:SIKK_RS/Model/AllFaskes_Model.dart' as Detail;
-import 'package:SIKK_RS/View/Templates/BaseAppBar.dart';
-import 'package:SIKK_RS/View/Templates/DetailCard.dart';
+import 'package:sikk_rs/Model/AllFaskes_Model.dart' as Detail;
+import 'package:sikk_rs/View/Templates/BaseAppBar.dart';
+import 'package:sikk_rs/View/Templates/DetailCard.dart';
 
 class KelasPage extends StatefulWidget {
   final String nama;

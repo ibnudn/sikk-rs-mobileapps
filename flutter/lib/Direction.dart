@@ -3,7 +3,7 @@ import 'package:flutter_map/flutter_map.dart';
 // import 'package:flutter_map_location_marker/flutter_map_location_marker.dart';
 import 'package:location/location.dart';
 import 'package:latlong2/latlong.dart';
-import 'package:SIKK_RS/Model/Direction_Helper.dart';
+import 'package:sikk_rs/Model/Direction_Helper.dart';
 import 'dart:async';
 
 class Direction extends StatefulWidget {

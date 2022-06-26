@@ -2,9 +2,9 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:bubble_tab_indicator/bubble_tab_indicator.dart';
-import 'package:SIKK_RS/Model/Faskes_Model.dart' as Faskes;
-import 'package:SIKK_RS/Model/Kelas_Model.dart' as Kelas;
-import 'package:SIKK_RS/View/Templates/MainCard.dart';
+import 'package:sikk_rs/Model/Faskes_Model.dart' as Faskes;
+import 'package:sikk_rs/Model/Kelas_Model.dart' as Kelas;
+import 'package:sikk_rs/View/Templates/MainCard.dart';
 
 Color primaryColor = HexColor("#45B6FE");
 Color secondaryColor = HexColor("#ADD8E6");
