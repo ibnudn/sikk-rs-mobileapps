@@ -1,4 +1,4 @@
-# latihan
+# sikk_rs
 
 A new Flutter project.
 

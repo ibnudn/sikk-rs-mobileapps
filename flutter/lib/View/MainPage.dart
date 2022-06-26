@@ -2,9 +2,9 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:bubble_tab_indicator/bubble_tab_indicator.dart';
-import 'package:latihan/Model/Faskes_Model.dart' as Faskes;
-import 'package:latihan/Model/Kelas_Model.dart' as Kelas;
-import 'package:latihan/View/Templates/MainCard.dart';
+import 'package:sikk_rs/Model/Faskes_Model.dart' as Faskes;
+import 'package:sikk_rs/Model/Kelas_Model.dart' as Kelas;
+import 'package:sikk_rs/View/Templates/MainCard.dart';
 
 Color primaryColor = HexColor("#45B6FE");
 Color secondaryColor = HexColor("#ADD8E6");
@@ -66,6 +66,7 @@ class _MainPageState extends State<MainPage> {
                                 nama: snapshot.data[i].nama,
                                 alamat: snapshot.data[i].alamat,
                                 koordinat: snapshot.data[i].koordinat,
+                                website: snapshot.data[i].website,
                                 tipe: "faskes",
                               ));
                             }

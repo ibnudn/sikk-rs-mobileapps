@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:percent_indicator/percent_indicator.dart';
-import 'package:latihan/View/FaskesPage.dart';
-import 'package:latihan/View/KelasPage.dart';
+import 'package:sikk_rs/View/FaskesPage.dart';
+import 'package:sikk_rs/View/KelasPage.dart';
 
 class MainCard extends StatelessWidget {
-  final String tersedia, kapasitas, nama, alamat, koordinat, tipe;
+  final String tersedia, kapasitas, nama, alamat, koordinat, website, tipe;
 
   MainCard(
       {this.tersedia = "",
@@ -12,6 +12,7 @@ class MainCard extends StatelessWidget {
       this.nama = "",
       this.alamat = "",
       this.koordinat = "",
+      this.website = "",
       this.tipe = ""});
 
   @override
@@ -38,6 +39,7 @@ class MainCard extends StatelessWidget {
                   nama: nama,
                   alamat: alamat,
                   koordinat: koordinat,
+                  website: website,
                 );
               } else {
                 return KelasPage(

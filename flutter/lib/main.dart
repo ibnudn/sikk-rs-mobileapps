@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
-import 'package:latihan/View/MainPage.dart';
-import 'package:latihan/View/Templates/BaseAppBar.dart';
+import 'package:sikk_rs/View/MainPage.dart';
+import 'package:sikk_rs/View/Templates/BaseAppBar.dart';
 
 void main() {
   runApp(MyApp());
