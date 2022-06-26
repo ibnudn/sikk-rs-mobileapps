@@ -51,7 +51,7 @@ android {
                 def variantName = variant.name
                 def versionName = variant.versionName
                 def formattedDate = new Date().format('dd-MM-YYYY')
-                outputFileName = "SIKK-RS-SOLO_${variantName}_D_${formattedDate}_V_${versionName}.apk"
+                outputFileName = "SIKK-RS-SOLO_${variantName}_${formattedDate}_v${versionName}.apk"
             }
         }
     }
