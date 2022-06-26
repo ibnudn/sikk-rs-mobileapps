@@ -30,4 +30,4 @@ Unduh aplikasi [di sini](https://bit.ly/sikk-rs-solo).
 _Download the app [here](https://bit.ly/sikk-rs-solo)._
 
 > Berikan izin untuk menginstal dari aplikasi pihak ketiga.
-> Allow permission to install from third party apps.
+> _Allow permission to install from third party apps._
